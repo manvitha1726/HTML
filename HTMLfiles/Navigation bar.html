@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu</title>
+    <style>
+        ul{list-style-type: none; /*in order to remove bullets*/
+           /* width:15%;  /* nav bar width and height*/
+            /*     height:100%;     */
+            background-color: antiquewhite;
+            position:fixed; /*when u scroll down nav bar remains inits place*/
+            overflow: auto;/*elastic property*/
+        }
+        *{
+            margin:0;  /* by default system allocates some value to margin and padding, now we are making it as 0*/
+            padding:5px; /* in order to list them in corner*/
+        }
+        li a{
+            text-decoration: none; /*in order to remove under line below the link*/
+            display:block; /*when cursor touches that will be displayed as ablock*/
+            color:black;/*link text color changes from blue to black*/
+            text-align: center;
+        }
+        li a:hover{
+            background-color: chocolate;/*whenever cursor touches bgcolor changes from cream to brown*/
+            color: darkgreen;/*whenever cursor touches txtcolor changes from black to green*/
+
+        }
+        li{
+            float: left;  /*horizontal nav bar*/
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">tutorials</a></li>
+        <li><a href="#">offers</a></li>
+        <li><a href="#"> aboutus</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+</head>
+<body>
+    <canvas id="mycanvas"  width="800"  height="700"></canvas>
+    <script>
+        var var1=document.getElementById("mycanvas");//must be in double quotes
+        var var2=var1.getContext('2d');
+        //shadows
+        var2.shadowOffsetX=10; //as no inc distance b/w shadow and name inc
+        var2.shadowOffsetY=6;
+        var2.shadowBlur=3;  //as no inc blur inc clarity dec
+        var2.shadowColor="black";
+        //normal txt creation
+        var2.font="bold 70pt  Algerian";
+        var2.fillStyle="olive";
+        var2.fillText("manvitha",100,100);     
+        var2.fillRect(100,200,50,80);//(xaxis,yaxis,width,length)
+    </script>
+    
+</body>
+</html>

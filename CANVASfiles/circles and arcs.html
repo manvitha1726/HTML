@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles and arcs</title>
+</head>
+<body>
+<canvas id="mycanvas" width="900" height="900"></canvas>
+<script>
+    var v1=document.getElementById("mycanvas")
+    var v2=v1.getContext('2d')
+    v2.beginPath();
+    v2.arc(200,200,100,0,360); //Math.PI //(x,y,radius,start angle,end angle) 0 to 360
+    v2.fill();  //(,,,0,) will be circle
+    v2.beginPath();
+    v2.arc(200,400,100,90,0);
+    v2.fillStyle="yellow";
+    v2.fill();   
+</script>
+</body>
+</html>

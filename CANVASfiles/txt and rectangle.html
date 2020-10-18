@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>canvas1(txt and rect)</title>
+</head>
+
+<body>
+ <canvas id="myCanvas" width="600" 
+  height="900" style="border:7px solid red;">
+ </canvas>
+ <script>
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext('2d');
+  //multi begins
+  var multi=ctx.createLinearGradient(0,0,200,0);    //(x1,y1,x2,y2)  x1- first color space inc as x1 inc
+  multi.addColorStop(.0,"violet");                  //y1-tilt leftwards    y2-tilt right wards   x2 must be same as fillReact third value
+  multi.addColorStop(.15,"indigo");                 //right to left layers
+  multi.addColorStop(.35,"blue");
+  multi.addColorStop(.65,"green");
+  multi.addColorStop(.75,"yellow");
+  multi.addColorStop(.95,"red");
+  multi.addColorStop(1.,"orange");
+  ctx.fillStyle=multi;
+  ctx.font="50px algerian";
+  ctx.fillRect(20,220,200,150);             //coloured rectangle ke liae
+  ctx.fillText("coloured txt",20,450);
+  //use of multi is over
+  ctx.fillStyle="green";  
+  ctx.strokeStyle="blue";
+  ctx.fillText("manvitha",10,50);  
+  ctx.strokeText("vemulapalli",40,100);
+  ctx.fillRect(80,140,30,30);
+  ctx.strokeRect(80,180,30,30); 
+  ctx.clearRect(90,150,15,15);
+  
+ </script>
+</body>
+</html>

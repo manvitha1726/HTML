@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG(scallable vector graphics)</title>
+    <!--  canvas   vs   SVG  
+     1)canvas-when zoomed got pixelated where as SVG is stable
+     2)simple games are created using canvas,Graphics are created using SVG-->
+</head>
+<body>
+    <svg width="2000" height="900">
+    <rect x="100" y="100" width="100"  height="100"  style="fill:azure;stroke:rgb(218, 22, 55);stroke-width:3"  rx="20"  ry="20" />
+    <!-- Inorder to get rounded rectangle use properties rx=""  ry=""-->
+    <circle  cx="100" cy="300" r="50"  style="fill:azure;stroke:rgb(218, 22, 55);stroke-width:3" />
+    <polygon  points=" 300,100  200,200  500,200"  style="fill:azure;stroke:rgb(218, 22, 55);stroke-width:3" ></polygon>
+    <polygon  points=" 300,200  200,300  500,500  700,300  800,200"  style="fill:azure;stroke:rgb(218, 22, 55);stroke-width:3" ></polygon>
+    <text font-family="elephant" x="200" y="200" fill="red"  font-size="43" stroke="black"  stroke-width="2">
+        Write text here :D
+    </text>
+    <ellipse  cx="500" cy="500" rx="60" ry="40" style="fill:chartreuse;stroke:coral"/>
+    <line x1="1000" y1="50"  x2="1000"  y2="150" style="stroke:darkgreen"/>
+    <polyline  points="850,20  900,50 1000,80  750,50" style="fill:darkorange"/>
+
+    </svg>
+    
+</body>
+</html>
